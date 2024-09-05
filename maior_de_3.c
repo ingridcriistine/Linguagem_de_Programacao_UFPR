@@ -11,7 +11,14 @@
 
 int main(void) {
     
-    int a = 5, b = -1, c = 10, maior;
+    int a, b, c, maior;
+    
+    printf("Primeiro valor: ");
+    scanf("%d", &a);
+    printf("Segundo valor: ");
+    scanf("%d", &b);
+    printf("Terceiro valor: ");
+    scanf("%d", &c);
     
     maior = a;
     if(b > maior) {
@@ -20,7 +27,6 @@ int main(void) {
     if(c > maior) {
         maior = c;
     }
-    
     printf("%i", maior);
-    
+    return 0;
 }
