@@ -9,21 +9,24 @@
 #include <stdio.h>
 
 int main(void) {
-    int inteiro;
+    
+    int inteiro ;
     scanf("%d", &inteiro);
     printf("%d\n", inteiro);
     
-    // char tecla;
-    // tecla = getchar();
-    // printf("%c\n", tecla);
+    int tecla; 
+    tecla = getchar();
+    tecla = getchar();
+    printf("%d %c\n", tecla, tecla);
     
     float pontoFlutuante;
     scanf("%f", &pontoFlutuante);
     printf("%.2f\n", pontoFlutuante);
     
-    // char texto[100];
-    // gets(texto);
-    // printf("%s\n", texto);
+    char texto[100];
+    gets(texto);
+    gets(texto);
+    printf("%s\n", texto);
     
     return 0;
 }
