@@ -3,18 +3,26 @@
 int main() {
     char str1[100];
     char str2[100];
+    int i = 0;
+    int diferente = 0;
     
-    scanf("%s", &str1);
-    scanf("%s", &str2);
+    scanf("%s", str1);
+    scanf("%s", str2);
     
-    if(str1 == str2) {
-        printf("0");
+    while(str1[i] != '\0' || str2[i] != '\0') {
+        if(str1[i] != str2[i]) {
+            diferente = 1;
+            break;    
+        }
+        
+        i++;
     }
-    else if(str1 < str2) {
-        printf("-1");
+    
+    if(diferente || str1[i] != '\0' && str2[i] != '\0') {
+        printf("É diferente");
     }
     else {
-        printf("1");
+        printf("Igual");
     }
     
     return 0;
