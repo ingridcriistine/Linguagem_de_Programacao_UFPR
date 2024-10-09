@@ -32,7 +32,7 @@ int main()
     
     else {
         if(x1 == x2) {
-            printf("A função só tem uma raíz em %i", x1);
+            printf("A função só tem uma raiz em %i", x1);
         }
         
         else {
