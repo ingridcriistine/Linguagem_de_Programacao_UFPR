@@ -13,7 +13,7 @@ int notaFiscal(Produto produtos[]) {
     
     printf("-------------NOTA FISCAL-------------");
     
-    for(int i = 0; i < 5; i++) {
+    for(int i = 0; i < 10; i++) {
 
         printf("\n%i | %s          R$ %.2f", produtos[i].id, produtos[i].nome, produtos[i].preco);
         valorTotal += produtos[i].preco;
@@ -25,9 +25,9 @@ int notaFiscal(Produto produtos[]) {
 
 int main()
 {
-    Produto produtos[5];
+    Produto produtos[10];
     
-    for(int i = 0; i < 5; i++) {
+    for(int i = 0; i < 10; i++) {
         printf("\nNome do produto: ");
         scanf("%s", produtos[i].nome);
         
